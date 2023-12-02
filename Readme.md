@@ -33,6 +33,7 @@ ___
     "imageUri": "https://placehold.co/100"
 }
 ```
+---
 #### Update Game By Id
 [PUT] : http://localhost:5276/games/1
 ```json
@@ -44,6 +45,7 @@ ___
     "imageUri": "https://placehold.co/100"
 }
 ```
+---
 #### Delete Game By Id
 [DELETE] : http://localhost:5276/games/2
 ___
