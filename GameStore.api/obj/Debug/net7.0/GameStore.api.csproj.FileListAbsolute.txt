@@ -23,3 +23,9 @@ C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\
 C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\GameStore.api.pdb
 C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\GameStore.api.genruntimeconfig.cache
 C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\ref\GameStore.api.dll
+C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\bin\Debug\net7.0\MinimalApis.Extensions.dll
+C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\bin\Debug\net7.0\MiniValidation.dll
+C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\GameStore.api.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\GameStore.api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\moham\Documents\dotNetProject\GameStore\GameStore.api\obj\Debug\net7.0\GameStore.api.csproj.CopyComplete
