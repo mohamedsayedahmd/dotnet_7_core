@@ -33,7 +33,9 @@ List<Game> games = new(){
 var builder = WebApplication.CreateBuilder(args); // for services
 var app = builder.Build();
 
-var group = app.MapGroup("games");// Prefix of the endpoint
+// WithParameterValidation - NuGet
+var group = app.MapGroup("games")
+               .WithParameterValidation();
 
 // Get Operation
 group.MapGet("/", () => games);

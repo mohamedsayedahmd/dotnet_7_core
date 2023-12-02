@@ -50,3 +50,5 @@ ___
 [DELETE] : http://localhost:5276/games/2
 ___
 
+NuGet Packages:/
+https://www.nuget.org/packages/MinimalApis.Extensions#readme-body-tab
