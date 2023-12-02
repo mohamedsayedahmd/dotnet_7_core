@@ -3,23 +3,27 @@
 ---
 GameStore.Api.csproj
 ---
-### One way to build and run :-
+#### One way to build and run :-
 
 #### Build the project
 GameStore.api> `dotnet build`
 #### Run the project
 GameStore.api> `dotnet run`
 ---
-### Second way to build and run (.vscode) :-
+#### Second way to build and run (.vscode) :-
 ctrl + shift + B
 
-### [localhost](http://localhost:5276/)
+#### [localhost](http://localhost:5276/)
 
 ---
-requests:
-- [GET]  http://localhost:5276/games
-- [GET]  http://localhost:5276/games/1
-- [Post]  http://localhost:5276/games
+#### Get All Games
+[GET]  http://localhost:5276/games
+___
+#### Get Game By Id
+[GET]  http://localhost:5276/games/1
+___
+#### Create New Game
+[POST] : http://localhost:5276/games :
 ```json
 {
     "name": "Minecraft",
@@ -29,3 +33,18 @@ requests:
     "imageUri": "https://placehold.co/100"
 }
 ```
+#### Update Game By Id
+[PUT] : http://localhost:5276/games/1
+```json
+{
+    "name": "Street Fighter II Turbo",
+    "genre": "Fighting",
+    "price": 9.99,
+    "releaseDate": "1991-02-01",
+    "imageUri": "https://placehold.co/100"
+}
+```
+#### Delete Game By Id
+[DELETE] : http://localhost:5276/games/2
+___
+
