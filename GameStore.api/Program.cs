@@ -33,12 +33,12 @@ List<Game> games = new(){
 var builder = WebApplication.CreateBuilder(args); // for services
 var app = builder.Build();
 
-// Get operation
-app.MapGet("/", () => "Hello World!");
+var group = app.MapGroup("games");// Prefix of the endpoint
 
-app.MapGet("/games", () => games);
+// Get Operation
+group.MapGet("/", () => games);
 
-app.MapGet("/games/{id}", (int id) =>
+group.MapGet("/{id}", (int id) =>
 {
     Game? game = games.Find(game => game.Id == id); // like filter in js
     if (game is null)
@@ -48,14 +48,16 @@ app.MapGet("/games/{id}", (int id) =>
     return Results.Ok(game);
 }).WithName(GetGameEndpointName); // provide a name for the endpoint
 
-app.MapPost("/games", (Game game) =>
+// Post Operation
+group.MapPost("/", (Game game) =>
 {
     game.Id = games.Max(game => game.Id) + 1;
     games.Add(game);
     return Results.CreatedAtRoute(GetGameEndpointName, new { id = game.Id }, game);
 });
 
-app.MapPut("/games/{id}", (int id, Game updatedGame) =>
+// Put Operation
+group.MapPut("/{id}", (int id, Game updatedGame) =>
 {
     Game? existingGame = games.Find(game => game.Id == id);
     if (existingGame is null)
@@ -71,7 +73,8 @@ app.MapPut("/games/{id}", (int id, Game updatedGame) =>
     return Results.NoContent();
 });
 
-app.MapDelete("/games/{id}", (int id) =>
+// Delete Operation
+group.MapDelete("/{id}", (int id) =>
 {
 
     Game? existingGame = games.Find(game => game.Id == id);
