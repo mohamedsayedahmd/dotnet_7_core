@@ -1,14 +1,14 @@
 
-`dotnet new web -n GameStore.api`
----
-GameStore.Api.csproj
+Create New Dotnet Project
+- `dotnet new web -n GameStore.api`
+- GameStore.Api.csproj
 ---
 #### One way to build and run :-
 
-#### Build the project
+##### Build the project
 GameStore.api> `dotnet build`
-#### Run the project
-GameStore.api> `dotnet run`
+##### Run the project
+- ```GameStore.api> dotnet run```
 ---
 #### Second way to build and run (.vscode) :-
 ctrl + shift + B
@@ -52,3 +52,5 @@ ___
 
 NuGet Packages:/
 https://www.nuget.org/packages/MinimalApis.Extensions#readme-body-tab
+
+___
